@@ -7,25 +7,26 @@
 </head>
 <body>
     <?php
-    $Piet = array(
+    $PietEen = array(
         "voornaam" => "Piet",
         "achternaam" => "Pat",
         "leeftijd" => "17",
         "klas" => "9A"
     );
-    $Muhammad = array(
+    $MuhammadTwee = array(
         "voornaam" => "Muhammad",
         "achternaam" => "Ali",
         "leeftijd" => "17",
         "klas" => "9G"
     );
-    $Els = array(
+    $studentDrie = array(
         "voornaam" => "Els",
         "achternaam" => "Verheids",
         "leeftijd" => "16",
         "klas" => "0C"
     );
-    echo $Els;
+    echo "Gegevens student:"." ". $studentDrie["voornaam"]." ". $studentDrie["achternaam"]." "."leeftijd,"." ".$studentDrie["leeftijd"].
+    " ". "klas,"." ".$studentDrie["klas"];
     ?>
 </body>
 </html>
