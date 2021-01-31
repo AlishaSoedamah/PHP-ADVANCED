@@ -1,1 +1,7 @@
-Kun je nog iets zeg waarom er twee manieren zijn: Get en Post? Wat is het voordeel van Get en wat van Post? In welke situaties gebruik je Get en wanneer Post?
+Kun je nog iets zeg waarom er twee manieren zijn: 
+Get en Post? Wat is het voordeel van Get en wat van Post? In welke situaties gebruik je Get en wanneer Post?
+
+GET is een manier waar variabelen in de URL worden weergegeven.
+POST is een array met variabelen die via de HTTP POST-methode aan het huidige script worden doorgegeven.
+
+mijnmuziek.php?artiest=Willow+Smith&titel=PrettyGirlz&jaarvanuitkomst=2019&muzieksoort=Rock
