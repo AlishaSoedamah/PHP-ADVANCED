@@ -10,15 +10,39 @@
 <body>
     <style>
         body {
+            background-color: <?php echo $_POST["achtergrondkleur"]; ?>;
+        }
 
-            background-color: <?php echo $kleuren; ?>
+        table,
+        th,
+        tr,
+        td {
+            color: <?php echo $_POST["tekstkleur"] ?>;
+            border: <?php echo $_POST["border"] ?> solid;
+            padding: <?php echo $_POST["padding"] ?>;
         }
     </style>
-    <!--associative array -->
-    <!--naam, leeftijd, muzieksmaak, woonplaats, sport, ect..-->
-    <?php
-
-    ?>
+    <table>
+        <thead>
+            <tr>
+                <th>Naam</th>
+                <th>Leeftijd</th>
+                <th>Klas</th>
+                <th>Muziek</th>
+                <th>Woonplaats</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <?php
+                $mijnGegevens = array("Naam" => "Alisha", "Leeftijd" => "16", "Klas" => "0A", "Muziek" => "Indie Pop", "Woonplaats" => "Uithoorn");
+                foreach ($mijnGegevens as $key => $value) {
+                    echo "<td>$value</td>";
+                }
+                ?>
+            </tr>
+        </tbody>
+    </table>
 </body>
 
 </html>
