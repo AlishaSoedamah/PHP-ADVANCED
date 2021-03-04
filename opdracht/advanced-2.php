@@ -22,25 +22,22 @@
             padding: <?php echo $_POST["padding"] ?>;
         }
     </style>
+
+    <?php $mijnGegevens = array("Naam" => "Alisha", "Leeftijd" => "16", "Klas" => "0A", "Muziek" => "Indie Pop", "Woonplaats" => "Uithoorn"); ?>
+
     <table>
-        <thead>
-            <tr>
-                <th>Naam</th>
-                <th>Leeftijd</th>
-                <th>Klas</th>
-                <th>Muziek</th>
-                <th>Woonplaats</th>
-            </tr>
-        </thead>
         <tbody>
-            <tr>
-                <?php
-                $mijnGegevens = array("Naam" => "Alisha", "Leeftijd" => "16", "Klas" => "0A", "Muziek" => "Indie Pop", "Woonplaats" => "Uithoorn");
-                foreach ($mijnGegevens as $key => $value) {
-                    echo "<td>$value</td>";
-                }
-                ?>
-            </tr>
+            <?php foreach ($mijnGegevens as $key => $waarde) : ?>
+                <tr>
+                    <td>
+                        <?php echo $key ?>
+                    </td>
+                    <td>
+                        <?php echo $waarde ?>
+                    </td>
+                </tr>
+            <?php endforeach; ?>
+
         </tbody>
     </table>
 </body>

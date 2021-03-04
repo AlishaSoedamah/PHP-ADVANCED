@@ -21,7 +21,6 @@
                 echo "<option value=$value>$value</option>";
             };
             ?>
-
         </select><br>
 
         <label>Kies een tekst kleur:</label>
@@ -32,6 +31,7 @@
             foreach ($kleuren as $tekstkleur) {
                 echo "<option value=$tekstkleur>$tekstkleur</option>";
             };
+
             ?>
 
         </select><br>
