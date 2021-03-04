@@ -37,10 +37,10 @@
         </select><br>
 
         <label>Border dikte (px)</label>
-        <input type="numer" name="border" placeholder="bijv. 5px"><br>
+        <input type="text" name="border" placeholder="bijv. 5px"><br>
 
         <label>Cel-padding (px)</label>
-        <input type="numer" name="padding" placeholder="bijv. 5px"><br>
+        <input type="text" name="padding" placeholder="bijv. 5px"><br>
 
         <input type="submit" name="submit" value="verstuur">
 

@@ -24,18 +24,22 @@
     </style>
 
     <?php $mijnGegevens = array("Naam" => "Alisha", "Leeftijd" => "16", "Klas" => "0A", "Muziek" => "Indie Pop", "Woonplaats" => "Uithoorn"); ?>
-
+    <?php function maakRij($key, $waarde)
+    {
+        echo   "<tr>
+            <td>
+               $key
+            </td>
+            <td>
+               $waarde
+            </td>
+        </tr>";
+    }
+    ?>
     <table>
         <tbody>
             <?php foreach ($mijnGegevens as $key => $waarde) : ?>
-                <tr>
-                    <td>
-                        <?php echo $key ?>
-                    </td>
-                    <td>
-                        <?php echo $waarde ?>
-                    </td>
-                </tr>
+                <?php maakRij($key, $waarde); ?>
             <?php endforeach; ?>
 
         </tbody>
